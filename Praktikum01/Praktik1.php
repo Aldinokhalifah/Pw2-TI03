@@ -1,9 +1,9 @@
 <?php
 // Buat array asosiatif nilai
-$nilai1 = ["id" => 1, "nim" => "01101", "uts" => 80, "uas" => 84, "tugas" => 78];
-$nilai2 = ["id" => 2, "nim" => "01102", "uts" => 90, "uas" => 80, "tugas" => 88];
-$nilai3 = ["id" => 3, "nim" => "01103", "uts" => 70, "uas" => 74, "tugas" => 70];
-$nilai4 = ["id" => 4, "nim" => "01104", "uts" => 88, "uas" => 95, "tugas" => 80];
+$nilai1 = ["id" => 1, "nim" => "01101", "uts" => 83, "uas" => 94, "tugas" => 78];
+$nilai2 = ["id" => 2, "nim" => "01102", "uts" => 90, "uas" => 90, "tugas" => 88];
+$nilai3 = ["id" => 3, "nim" => "01103", "uts" => 75, "uas" => 74, "tugas" => 70];
+$nilai4 = ["id" => 4, "nim" => "01104", "uts" => 78, "uas" => 95, "tugas" => 80];
 
 // Buat array multidimensi
 $kumpulan_nilai = [$nilai1, $nilai2, $nilai3, $nilai4];
@@ -26,8 +26,8 @@ $kumpulan_nilai = [$nilai1, $nilai2, $nilai3, $nilai4];
 <body>
     <div class="container">
         <h1 class="text-center">Daftar Nilai Siswa</h1>
-        <table class="table">
-            <thead class="thead-dark">
+        <table class="table  table-bordered border-primary table-hover">
+            <thead class="thead-light">
                 <tr>
                     <th scope="col">No</th>
                     <th scope="col">NIM</th>
