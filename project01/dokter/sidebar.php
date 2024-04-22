@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!$_SESSION['user']) {
+    header("location:login.php");
+}
+?>
+
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -14,7 +21,7 @@
                 <img src="../dist/img/avatar4.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="https://github.com/Aldinokhalifah" class="d-block">Aldino Khalifah</a>
+                <a href="https://github.com/Aldinokhalifah" class="d-block"><?=$_SESSION['user']['username'];?></a>
             </div>
         </div>
 
