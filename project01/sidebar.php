@@ -1,9 +1,15 @@
 <?php
-session_start();
-if(!$_SESSION['user']) {
-    header("location:login.php");
-}
+require 'dbkoneksi.php';
+
+$query_sql = "SELECT * FROM admin_dashboard WHERE username = ?";
+$stmt = $dbh->prepare($query_sql);
+$stmt->execute(["admin AL"]); // Ganti $username dengan nilai yang ingin Anda cari
+$result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+// Jika ingin menampilkan username
+$username = $result['username'];
 ?>
+
 
 
 <!-- Main Sidebar Container -->
@@ -22,7 +28,7 @@ if(!$_SESSION['user']) {
                 <img src="dist/img/avatar4.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="https://github.com/Aldinokhalifah" class="d-block"><?=$_SESSION['user']['username'];?></a>
+                <a href="h" class="d-block"><?= $username;?></a>
             </div>
         </div>
 

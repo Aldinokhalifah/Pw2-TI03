@@ -1,14 +1,4 @@
-<?php
-require '../dbkoneksi.php';
 
-$query_sql = "SELECT * FROM admin_dashboard WHERE username = ?";
-$stmt = $dbh->prepare($query_sql);
-$stmt->execute(["admin AL"]); // Ganti $username dengan nilai yang ingin Anda cari
-$result = $stmt->fetch(PDO::FETCH_ASSOC);
-
-// Jika ingin menampilkan username
-$username = $result['username'];
-?>
 
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -26,12 +16,12 @@ $username = $result['username'];
                 <img src="../dist/img/avatar4.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="https://github.com/Aldinokhalifah" class="d-block"><?=$username;?></a>
+                <a href="" class="d-block"></a>
             </div>
         </div>
 
         <!-- SidebarSearch Form -->
-        <div class="form-inline">
+        <!-- <div class="form-inline">
             <div class="input-group" data-widget="sidebar-search">
                 <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
                 <div class="input-group-append">
@@ -40,14 +30,14 @@ $username = $result['username'];
                     </button>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
@@ -75,7 +65,7 @@ $username = $result['username'];
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
 
             </ul>
         </nav>

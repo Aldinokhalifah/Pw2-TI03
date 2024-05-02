@@ -22,7 +22,7 @@
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
-            <ul class="navbar-nav">
+            <!-- <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
@@ -30,20 +30,20 @@
                     <a href="../index.php" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index.php" class="nav-link">Pasien</a>
+                    <a href="../pasien/index.php" class="nav-link">Pasien</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="../dokter" class="nav-link">Dokter</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../periksa" class="nav-link">Periksa</a>
+                    <a href="../periksa/index.php" class="nav-link">Periksa</a>
                 </li>
-            </ul>
+            </ul> -->
 
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
                 <!-- Navbar Search -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" data-widget="navbar-search" href="#" role="button">
                         <i class="fas fa-search"></i>
                     </a>
@@ -62,8 +62,8 @@
                             </div>
                         </form>
                     </div>
-                </li>
+                </li> -->
 
             </ul>
         </nav>
-        /.navbar
+        <!-- /.navbar -->
