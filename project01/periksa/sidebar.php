@@ -26,7 +26,7 @@ $username = $result['username'];
                 <img src="../dist/img/avatar4.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="https://github.com/Aldinokhalifah" class="d-block"><?=$username;?></a>
+                <a href="../dashboard.php" class="d-block"><?=$username;?></a>
             </div>
         </div>
 
@@ -72,6 +72,18 @@ $username = $result['username'];
                             <a href="../periksa/index.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Table Periksa</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../user/index.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Table pengguna</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../kelurahan/index.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Table Kelurahan</p>
                             </a>
                         </li>
                     </ul>

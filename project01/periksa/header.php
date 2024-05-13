@@ -38,6 +38,12 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="../periksa/index.php" class="nav-link">Periksa</a>
                 </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="../user/index.php" class="nav-link">Pengguna</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="../kelurahan/index.php" class="nav-link">Kelurahan</a>
+                </li>
             </ul>
 
             <!-- Right navbar links -->
