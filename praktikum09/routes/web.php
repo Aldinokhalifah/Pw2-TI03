@@ -1,5 +1,7 @@
 <?php
 namespace App\Http\Controllers;
+
+use App\Http\Controllers\PasienControllers;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -19,3 +21,5 @@ Route::get('/pasien', function () {
 });
 
 Route::get('/admin', [AdminController::class, 'index']);
+Route::get('/admin/pasien', [PasienController::class, 'index']);
+
