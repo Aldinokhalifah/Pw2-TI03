@@ -11,12 +11,15 @@ class Pasien extends Model
     protected $table = "pasiens"; // nama tabel yg digunakan
 
     // kolom yg dapat diisi di table pasien
-    protected $filltable = [
+    protected $fillable = [
         "kode" ,
         "nama" ,
         "tmp_lahir" ,
         "gender" ,
         "email" ,
-        "alamat"
+        "alamat",
     ];
+
+    // nonaktifin timestamp
+    public $timestamps = false;
 }
